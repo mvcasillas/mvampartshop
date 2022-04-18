@@ -31,18 +31,16 @@
         <div class="cuerpopedido">
             <h2>Haz tu pedido</h2>
             <form>
-                <fieldset>
+                <fieldset class="cajagrid">
                     <legend>Dirección del envío</legend>
-                    <label for="nombrecompleto">Nombre completo
-                        <input id="nombrecompleto" type="text" name="nombrecompleto">
-                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
-                    </label>
-                    <br>
-                    <label for="email">E-mail
-                        <input id="mail" type="email" name="mail">
-                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
-                    </label>
-                    <br>
+                    <label for="nombrecompleto">Nombre completo</label>
+                    <input id="nombrecompleto" type="text" name="nombrecompleto">
+                        
+                    
+                    <label for="email">E-mail</label>
+                    <input id="mail" type="email" name="mail">
+                        
+                    
                     <label for="tipovia">
                         <select name="tipovia" id="tipovia">
                             <option value="calle">Calle</option>
@@ -53,63 +51,56 @@
                             <option value="via">Vía</option>
                         </select>
                     </label>
-                    <label for="nombrevia">
-                        <input id="nombrevia" type="text" name="nombrevia">
-                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
-                    </label>
-                    <br>
-                    <label for="direccionp2"> Número/Piso/Escalera/Puerta
-                        <input id="direccionp2" type="text" name="direccionp2">
-                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>    
-                    </label>
-                    <br>
-                    <label for="localidad"> Localidad
-                        <input id="localidad" type="text" name="localidad">
-                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
-                    </label>
-                    <label for="cp">Código Postal
-                        <input id="cp" type="text" name="cp">
-                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
-                    </label>
-                    <br>
-                    <label for="pais">País
-                        <input id="pais" type="text" name="pais">
-                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <legend>Sobre el envío</legend>
-                    <input type="radio" id="ordinario" name="tipoenvio" value="ordinario">
-                    <label for="ordinario">Ordinario</label><br>
-                    <input type="radio" id="certificado" name="tipoenvio" value="certificado">
-                    <label for="certificado">Certificado</label>
+                    <!--<label for="nombrevia"></label>-->
+                    <input id="nombrevia" type="text" name="nombrevia"> 
+                    
+
+                    <label for="direccionp2"> Nº/Piso/Escalera/Puerta </label>
+                    <input id="direccionp2" type="text" name="direccionp2">     
+                    
+                    
+                    <label for="localidad"> Localidad</label>
+                    <input id="localidad" type="text" name="localidad">
+                        
+                    
+                    <label for="cp">Código Postal</label>
+                    <input id="cp" type="text" name="cp">  
+
+                    
+                    <label for="pais">País</label>
+                    <input id="pais" type="text" name="pais">
+                    
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cajagrid">
                     <legend>Tu pedido</legend>
-                    <label for="tipoproducto" id="tipoproducto">Tipo de producto
+                    <label for="tipoproducto" id="tipoproducto">Tipo de producto</label>
                         <select name="tipoproducto" id="tipoproducto">
                             <option value="llavero">Llavero</option>
                             <option value="print">Print</option>
                             <option value="pegatina">Pegatina</option>
                         </select>
-                    </label>
-                    
-                    <label for="numproducto" id="numproducto">Número(s) de producto
-                        <input id="numproducto" type="text" name="numproducto">
-                    </label>
-                    <br>
-                    
+
+                    <label for="numproducto" id="numproducto">Número(s) de producto</label>
+                    <input id="numproducto" type="text" name="numproducto"> 
                     
                 </fieldset>
 
                 <fieldset>
-                    <legend>Comentarios adicionales</legend>
-                    <textarea></textarea>
+                    <legend>Sobre el envío</legend>
+                    <input type="radio" id="ordinario" name="tipoenvio" value="ordinario">
+                    <label for="ordinario">Ordinario</label>
+                    <input type="radio" id="certificado" name="tipoenvio" value="certificado">
+                    <label for="certificado">Certificado</label>
                 </fieldset>
 
-                <input type="submit" value="Realizar pedido">
-                <input type="reset">
+                <fieldset>
+                    <legend>Comentarios adicionales</legend>
+                    <textarea rows="10" cols="50"></textarea>
+                </fieldset>
+
+                <input class="botonesform" type="submit" value="Realizar pedido">
+                <input class="botonesform" type="reset">
             </form>
 
             
