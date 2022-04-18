@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>MVampART Shop - Acerca de</title>
+
+	<link rel="stylesheet" media="screen" href="estilo_movil_default.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="María C">
+	<meta name="description" content="Ejercicio libre responsive tienda">
+
+</head>
+<body>
+    <header>
+        <div id="tienda">
+            <a href="index.html"><img id="logo" src="images/logo.JPG" alt="icono de la tienda"></a>
+		    <a href="index.html"><h1>MVampART Shop</h1></a>
+        </div>
+		<ul class="botonera">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="about.html">Sobre la tienda</a></li>
+			<li><a href="pedido.html">Haz tu pedido</a></li>
+		</ul>
+	</header>
+    <section class="wrapper">
+        <div class="banner">
+            Carrusel o algo
+        </div>
+        <p class="separador">· · ·</p>
+        <div class="cuerpopedido">
+            <h2>Haz tu pedido</h2>
+            <form>
+                <fieldset>
+                    <legend>Dirección del envío</legend>
+                    <label for="nombrecompleto">Nombre completo
+                        <input id="nombrecompleto" type="text" name="nombrecompleto">
+                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
+                    </label>
+                    <br>
+                    <label for="email">E-mail
+                        <input id="mail" type="email" name="mail">
+                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
+                    </label>
+                    <br>
+                    <label for="tipovia">
+                        <select name="tipovia" id="tipovia">
+                            <option value="calle">Calle</option>
+                            <option value="avenida">Avenida</option>
+                            <option value="glorieta">Glorieta</option>
+                            <option value="plaza">Plaza</option>
+                            <option value="travesia">Travesía</option>
+                            <option value="via">Vía</option>
+                        </select>
+                    </label>
+                    <label for="nombrevia">
+                        <input id="nombrevia" type="text" name="nombrevia">
+                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
+                    </label>
+                    <br>
+                    <label for="direccionp2"> Número/Piso/Escalera/Puerta
+                        <input id="direccionp2" type="text" name="direccionp2">
+                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>    
+                    </label>
+                    <br>
+                    <label for="localidad"> Localidad
+                        <input id="localidad" type="text" name="localidad">
+                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
+                    </label>
+                    <label for="cp">Código Postal
+                        <input id="cp" type="text" name="cp">
+                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
+                    </label>
+                    <br>
+                    <label for="pais">País
+                        <input id="pais" type="text" name="pais">
+                        <abbr title="obligatorio" aria-label="obligatorio">*</abbr>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Sobre el envío</legend>
+                    <input type="radio" id="ordinario" name="tipoenvio" value="ordinario">
+                    <label for="ordinario">Ordinario</label><br>
+                    <input type="radio" id="certificado" name="tipoenvio" value="certificado">
+                    <label for="certificado">Certificado</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tu pedido</legend>
+                    <label for="tipoproducto" id="tipoproducto">Tipo de producto
+                        <select name="tipoproducto" id="tipoproducto">
+                            <option value="llavero">Llavero</option>
+                            <option value="print">Print</option>
+                            <option value="pegatina">Pegatina</option>
+                        </select>
+                    </label>
+                    
+                    <label for="numproducto" id="numproducto">Número(s) de producto
+                        <input id="numproducto" type="text" name="numproducto">
+                    </label>
+                    <br>
+                    
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentarios adicionales</legend>
+                    <textarea></textarea>
+                </fieldset>
+
+                <input type="submit" value="Realizar pedido">
+                <input type="reset">
+            </form>
+
+            
+        </div>
+    </section>
+
+    <footer>
+        <h3 id="misredes">Mis redes</h3>
+		<div class="redeswrapper">
+			<div class="redes">
+                <a href="https://www.instagram.com/mvampart/">Instagram</a>
+            </div>
+			<div class="redes">
+                <a href="https://www.artstation.com/mariivamp">Art Station</a>
+            </div>
+			<div class="redes">
+                <a href="https://www.linkedin.com/in/mar%C3%ADa-casillas-d%C3%ADaz-ab934686/">Linked-in</a>
+            </div>
+			<div class="redes">
+                <a href="mailto:mvcasillasdiaz@gmail.com">E-mail</a>
+            </div>
+		</div>
+    </footer>
+
+
+</body>
+</html>
