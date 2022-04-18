@@ -383,19 +383,27 @@ fieldset{
     border: 2px solid #37B096;
 }
 
-.cajagrid{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:0.5vh;
-}
-
 legend{
     color:#e7eeff;
     font-weight:bold;
 }
 
+.cajagrid label{
+    display:block;
+}
+
 input{
     text-align: left;
+    width: 80%;
+}
+
+.envio input{
+    margin-left:2vw;
+    width: 5%;
+}
+
+.envio label{
+    margin-right:3vw;
 }
 
 .botonesform{
@@ -534,6 +542,13 @@ footer{
 
     .precio{
         font-size:2.1vw;
+    }
+
+    /*formulario ---------*/
+    .cajagrid{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:0.5vh;
     }
 
 }
