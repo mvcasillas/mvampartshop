@@ -115,9 +115,125 @@ section{
 
 .banner{
     background-color: aquamarine;
-    background-image: url(images/charms-3.jpg);
-    background-size:cover;
-    height:20vh;
+    /*background-image: url(images/charms-3.jpg);
+    background-size:cover;*/
+    height:35vw;
+    overflow:hidden;
+    text-align: left;
+    /*pegao de aquí pabajo*/
+    margin: 0 auto;  
+}
+
+.bannercaja{
+    -moz-animation: automatizacion 7s infinite linear;
+    -o-animation: automatizacion 7s infinite linear;
+    -webkit-animation: automatizacion 7s infinite linear;
+    animation: automatizacion 7s infinite linear;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.elementocarrusel{
+    float: left;
+    width: 32%;
+}
+
+.imagencarrusel{
+    width: 100%;
+}
+
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
 }
 
 .separador{
@@ -139,23 +255,27 @@ section{
 .elemento{
     border: 2px solid white;
     border-radius: 15px;
-    background-color:white;
+    background-color:rgb(244, 254, 250);
     height:20vh;
     margin-top:1vh;
     margin-bottom: 2vh;
     overflow: hidden;
     position: relative;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap:wrap;
 }
 
 .elemento img{
     width: 100%;
     opacity:80%;
-    transition:0.2s;
+    transition:0.5s;
 }
 
 .elemento:hover img{
     opacity: 55%;
-    width: 110%;
+    width: 120%;
 }
 
 .tituloproducto{
@@ -397,6 +517,25 @@ input{
     width: 80%;
 }
 
+#tipoproducto{
+    width:82%;
+}
+
+input, select, textarea{
+    border: 2px solid #37B096;
+    border-radius: 5px;
+    transition:0.2s;
+}
+
+input:hover, select:hover, textarea:hover{
+    background-color: #b8ede2;
+}
+
+textarea{
+    width: 70vw;
+    height: 10vh;
+}
+
 .envio input{
     margin-left:2vw;
     width: 5%;
@@ -469,12 +608,15 @@ footer{
     }
     
     .elementowrapper a{
-        grid-column: 1fr;
         display:flex;
         justify-content: center;
     }
 
     .elemento{
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap:wrap;
         width: 28vw;
         height: 30vh;
     }
@@ -484,7 +626,7 @@ footer{
     }
 
     .elemento:hover img{
-        width: 155%;
+        width: 165%;
     }
 
     /*Grids de barra lateral y productos*/
