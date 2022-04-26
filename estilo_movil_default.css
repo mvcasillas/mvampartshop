@@ -119,122 +119,44 @@ section{
     background-size:cover;*/
     height:35vw;
     overflow:hidden;
-    text-align: left;
-    /*pegao de aquí pabajo*/
-    margin: 0 auto;  
+    padding:0;
 }
 
-.bannercaja{
-    -moz-animation: automatizacion 7s infinite linear;
-    -o-animation: automatizacion 7s infinite linear;
-    -webkit-animation: automatizacion 7s infinite linear;
-    animation: automatizacion 7s infinite linear;
+.banner ul{
+    display:flex;
+    margin-top:0;
+    padding:0;
+    width: 400%;
 
-    -webkit-transition: all 0.75s ease;
-    -moz-transition: all 0.75s ease;
-    -ms-transition: all 0.75s ease;
-    -o-transition: all 0.75s ease;
-    transition: all 0.75s ease;
+    animation: cambio 17s infinite linear;
 }
 
-.elementocarrusel{
-    float: left;
-    width: 32%;
+.banner li{
+    width:100%;
+    list-style:none;
 }
 
-.imagencarrusel{
+.banner img{
     width: 100%;
 }
 
-@-moz-keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
+/*keyframes animación banner*/
+@keyframes cambio{
+    0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	23% {margin-left: -100%;}
+	46% {margin-left: -100%;}
+	
+	49% {margin-left: -200%;}
+	68% {margin-left: -200%;}
+	
+	71% {margin-left: -300%;}
+	96% {margin-left: -300%;}
 
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
+    100% {margin-left: 0;}
 }
 
-@-webkit-keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
-}
-
-@keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
-}
 
 .separador{
     font-size: 3em;
