@@ -118,6 +118,7 @@ section{
     /*background-image: url(images/charms-3.jpg);
     background-size:cover;*/
     height:35vw;
+    max-height: 400px;
     overflow:hidden;
     padding:0;
 }
