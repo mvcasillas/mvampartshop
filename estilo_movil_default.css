@@ -91,6 +91,10 @@ h1, h2{
     color:#e7eeff;
 }
 
+h1{
+    font-size: 2em;
+}
+
 .botonera{
     list-style-type:none;
     margin: 0vh 4vw 1vh 4vw;
@@ -523,6 +527,11 @@ footer{
 -------------------- DISEÑO EN GRID PARA PC ---------------
 */
 @media screen and (min-width:950px){
+    /*h1 del header*/
+    h1{
+        font-size: 2.5em;
+    }
+
     /*Grids de página principal*/
     .elementowrapper{
         display:grid;
